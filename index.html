@@ -1611,15 +1611,15 @@ function runSanityTests() {
 ===================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   runSanityTests();   // verify funnel math on every page load — check browser console
+  
+  // Always start with Step 1 (questions) - this is the primary user experience
+  // Previous data is loaded in background but user sees fresh start
   const restored = restoreFromStorage();
   if (restored) {
-    // Show step 2 immediately with saved data
-    showStep2();
-    // But also populate the step1 stream in background
+    // Pre-fill with saved data for convenience, but still show step 1
     rebuildStreamFromAnswers();
-  } else {
-    initStep1();
   }
+  initStep1();
 });
 </script>
 
