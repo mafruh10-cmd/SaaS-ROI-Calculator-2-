@@ -496,59 +496,18 @@ input[type=range]::-moz-range-thumb{
 
 <div class="page">
 
-  <!-- HERO / BLOG HEADER -->
-  <header class="blog-hero" style="text-align:center;padding:48px 0 36px">
-    <div class="blog-badge" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent-lt);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:14px">
+  <!-- MAIN BLOG TITLE -->
+  <header style="text-align:center;padding:48px 16px 36px">
+    <div style="display:inline-flex;align-items:center;gap:6px;background:var(--accent-lt);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:14px">
       📊 Financial Analysis
     </div>
-    <h1 style="font-size:clamp(24px,4vw,40px);font-weight:700;letter-spacing:-.025em;margin-bottom:16px;line-height:1.2;color:var(--text-1);max-width:700px;margin-left:auto;margin-right:auto">
+    <h1 style="font-size:clamp(26px,4vw,42px);font-weight:700;letter-spacing:-.025em;margin-bottom:16px;line-height:1.2;color:var(--text-1);max-width:800px;margin-left:auto;margin-right:auto">
       Free SaaS ROI Calculator: Estimate Your Return on Investment
     </h1>
-    <p style="font-size:16px;color:var(--text-2);max-width:600px;margin:0 auto;line-height:1.6">
+    <p style="font-size:16px;color:var(--text-2);max-width:650px;margin:0 auto;line-height:1.6">
       A comprehensive guide to understanding, calculating, and maximizing the return on your SaaS investments using data-driven analysis and proven frameworks.
     </p>
   </header>
-
-  <!-- KEY TAKEAWAYS -->
-  <div class="key-takeaways" style="background:linear-gradient(135deg,var(--accent-lt) 0%,#f0f4ff 100%);border:1px solid #c7d2fe;border-radius:var(--r-lg);padding:28px 24px;margin:0 auto 48px;max-width:800px">
-    <h2 style="font-size:18px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:10px;color:var(--text-1)">
-      ✨ Key Takeaways
-    </h2>
-    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px">
-      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
-        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
-        <span>SaaS ROI calculators quantify the financial return of software investments by measuring net profit against total cost of ownership — subscriptions, onboarding, and integration included.</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
-        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
-        <span>For SaaS founders, the six growth levers — new accounts, onboarding, activation, conversion, churn, and expansion — compound over 12 months and determine the trajectory of MRR.</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
-        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
-        <span>Monthly churn is the single most destructive metric in SaaS; reducing it by even 1% can add tens of thousands of dollars in cumulative 12-month revenue.</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
-        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
-        <span>Expansion revenue is underestimated: a 3% monthly expansion rate lifts effective ARPU by 43% by month 12 without acquiring a single new customer.</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- CALCULATOR HEADER -->
-  <div class="calc-intro" style="text-align:center;margin-bottom:28px">
-    <div class="badge">
-      <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
-        <path d="M5 .5L6.3 3.8H9.5L7 5.8L8 9L5 7L2 9L3 5.8L.5 3.8H3.7Z"/>
-      </svg>
-      Interactive Calculator
-    </div>
-    <h2 style="font-size:clamp(20px,3vw,28px);font-weight:700;letter-spacing:-.02em;margin:12px 0 8px;color:var(--text-1)">
-      Calculate Your SaaS Revenue Impact
-    </h2>
-    <p style="font-size:14.5px;color:var(--text-2);max-width:500px;margin:0 auto">
-      Answer 8 questions about your SaaS metrics. Then explore how improving 6 growth levers compounds your 12-month revenue.
-    </p>
-  </div>
 
   <!-- ======================================================
        STEP 1 — Progressive question flow
@@ -1666,415 +1625,340 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <!-- BLOG POST SECTION -->
-<section id="blog-post" style="margin-top:80px;padding-top:60px;border-top:2px solid var(--border);">
-  <style>
-    .blog-container{max-width:800px;margin:0 auto;padding:0 16px 80px}
-    .blog-header{text-align:center;margin-bottom:48px}
-    .blog-badge{display:inline-flex;align-items:center;gap:6px;background:var(--accent-lt);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:14px}
-    .blog-header h1{font-size:clamp(24px,4vw,36px);font-weight:700;letter-spacing:-.025em;margin-bottom:16px;line-height:1.25}
-    .blog-header p{font-size:16px;color:var(--text-2);max-width:600px;margin:0 auto;line-height:1.6}
-    
-    .key-takeaways{background:linear-gradient(135deg,var(--accent-lt) 0%,#f0f4ff 100%);border:1px solid #c7d2fe;border-radius:var(--r-lg);padding:28px 24px;margin-bottom:48px}
-    .key-takeaways h2{font-size:18px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-    .key-takeaways ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
-    .key-takeaways li{display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)}
-    .key-takeaways li::before{content:"✓";flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
-    
-    .blog-section{margin-bottom:48px}
-    .blog-section h2{font-size:22px;font-weight:700;margin-bottom:20px;color:var(--text-1)}
-    .blog-section h3{font-size:17px;font-weight:600;margin:24px 0 12px;color:var(--text-1);display:flex;align-items:center;gap:8px}
-    .blog-section h3 svg{width:18px;height:18px;color:var(--accent)}
-    .blog-section p{font-size:15px;line-height:1.75;color:var(--text-2);margin-bottom:16px}
-    
-    .info-box{background:#eff6ff;border-left:4px solid #3b82f6;border-radius:0 var(--r-sm) var(--r-sm) 0;padding:16px 20px;margin:20px 0}
-    .info-box p{font-size:14px;color:#1e40af;font-style:italic;margin:0}
-    
-    .insight-box{background:var(--accent-lt);border:1px solid #c7d2fe;border-radius:var(--r-md);padding:14px 18px;margin:20px 0;display:flex;align-items:flex-start;gap:12px}
-    .insight-box svg{flex-shrink:0;margin-top:2px;color:var(--accent)}
-    .insight-box p{font-size:13px;color:var(--text-2);margin:0}
-    .insight-box strong{color:var(--accent)}
-    
-    .benefit-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm)}
-    .benefit-card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-    .benefit-card-icon{width:36px;height:36px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:16px}
-    .benefit-card h4{font-size:15px;font-weight:600;margin:0}
-    .benefit-card p{font-size:14px;color:var(--text-2);line-height:1.6;margin:0}
-    
-    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
-    .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:20px;text-align:center;box-shadow:var(--sh-sm)}
-    .stat-card .number{font-size:28px;font-weight:700;color:var(--accent);margin-bottom:4px}
-    .stat-card .label{font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
-    
-    .formula-box{background:var(--text-1);border-radius:var(--r-md);padding:20px;margin:20px 0;text-align:center}
-    .formula-box code{font-size:18px;color:#4ade80;font-family:'SF Mono',monospace}
-    
-    .comparison-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
-    .comparison-table th{background:var(--surface-2);text-align:left;padding:12px 16px;font-weight:600;color:var(--text-3);border-bottom:2px solid var(--border)}
-    .comparison-table td{padding:12px 16px;border-bottom:1px solid var(--border);color:var(--text-2)}
-    .comparison-table tr:hover td{background:var(--surface-2)}
-    
-    .faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);margin-bottom:12px;overflow:hidden}
-    .faq-question{width:100%;padding:16px 20px;text-align:left;background:none;border:none;font-size:15px;font-weight:600;color:var(--text-1);cursor:pointer;display:flex;align-items:center;justify-content:space-between}
-    .faq-question:hover{background:var(--surface-2)}
-    .faq-question::after{content:"+";font-size:20px;color:var(--accent)}
-    .faq-item.active .faq-question::after{content:"−"}
-    .faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease}
-    .faq-item.active .faq-answer{max-height:500px}
-    .faq-answer p{padding:0 20px 16px;font-size:14px;line-height:1.7;color:var(--text-2);margin:0}
-    
-    .cta-box{background:linear-gradient(135deg,var(--accent) 0%,#7c3aed 100%);border-radius:var(--r-lg);padding:40px 32px;text-align:center;color:#fff;margin-top:48px}
-    .cta-box h2{font-size:24px;font-weight:700;margin-bottom:12px}
-    .cta-box p{font-size:16px;opacity:.9;margin-bottom:24px;max-width:500px;margin-left:auto;margin-right:auto}
-    .cta-button{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--accent);font-weight:700;padding:14px 28px;border-radius:var(--r-md);text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .15s}
-    .cta-button:hover{transform:translateY(-2px)}
-    
-    .case-study{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px;margin:24px 0}
-    .case-study-header{background:var(--text-1);color:#fff;padding:12px 16px;border-radius:var(--r-sm);margin:-24px -24px 20px}
-    .case-study h4{font-size:14px;font-weight:600;margin:0}
-    .case-study-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0}
-    .case-study-metric{background:var(--surface-2);padding:12px;border-radius:var(--r-sm);text-align:center}
-    .case-study-metric .value{font-size:20px;font-weight:700;color:var(--accent)}
-    .case-study-metric .label{font-size:11px;color:var(--text-3);text-transform:uppercase}
-    
-    @media(max-width:600px){
-      .blog-header h1{font-size:24px}
-      .comparison-table{font-size:12px}
-      .comparison-table th,.comparison-table td{padding:10px 12px}
-      .stat-grid{grid-template-columns:1fr}
-    }
-  </style>
 
-  <div class="blog-container">
-    <!-- Blog content continues from here -->
-        <li>Monthly churn is the single most destructive metric in SaaS; reducing it by even 1% can add tens of thousands of dollars in cumulative 12-month revenue through compounding retention.</li>
-        <li>Expansion revenue — upsells and plan upgrades — is underestimated: a 3% monthly expansion rate lifts effective ARPU by 43% by month 12 without acquiring a single new customer.</li>
-        <li>SaaS ROI differs from traditional ROI in time horizon, risk profile, and scalability — recurring investment models reward early improvement and penalize delayed action far more sharply.</li>
+<!-- BLOG CONTENT -->
+<section id="blog-content" style="margin-top:60px;padding-top:40px;border-top:1px solid var(--border);">
+  <article style="max-width:800px;margin:0 auto;padding:0 16px 80px;font-family:var(--font);color:var(--text-1);line-height:1.7;">
+    
+    <!-- KEY TAKEAWAYS -->
+    <div style="background:linear-gradient(135deg,var(--accent-lt) 0%,#f0f4ff 100%);border:1px solid #c7d2fe;border-radius:12px;padding:24px;margin-bottom:40px;">
+      <h2 style="font-size:18px;font-weight:700;margin:0 0 16px 0;display:flex;align-items:center;gap:8px;">✨ Key Takeaways</h2>
+      <ul style="margin:0;padding-left:20px;color:var(--text-2);font-size:14.5px;line-height:1.7;">
+        <li style="margin-bottom:10px;">SaaS ROI calculators quantify the financial return of software investments by measuring net profit against total cost of ownership — subscriptions, onboarding, and integration included.</li>
+        <li style="margin-bottom:10px;">For SaaS founders, the six growth levers — new accounts, onboarding, activation, conversion, churn, and expansion — compound over 12 months and determine the trajectory of MRR more than any single metric.</li>
+        <li style="margin-bottom:10px;">Monthly churn is the single most destructive metric in SaaS; reducing it by even 1% can add tens of thousands of dollars in cumulative 12-month revenue through compounding retention.</li>
+        <li style="margin-bottom:10px;">Expansion revenue — upsells and plan upgrades — is underestimated: a 3% monthly expansion rate lifts effective ARPU by 43% by month 12 without acquiring a single new customer.</li>
+        <li style="margin-bottom:10px;">SaaS ROI differs from traditional ROI in time horizon, risk profile, and scalability — recurring investment models reward early improvement and penalize delayed action far more sharply.</li>
         <li>ROI calculators are decision support tools, not oracles — their accuracy depends on the quality of inputs, and qualitative benefits like team morale or brand trust are never fully captured in a formula.</li>
       </ul>
     </div>
 
-    <!-- What is a SaaS ROI Calculator -->
-    <section class="blog-section">
-      <h2>What is a SaaS ROI Calculator?</h2>
-      
-      <h3>📖 Definition and Purpose</h3>
-      <p>A SaaS ROI calculator is a structured financial tool that translates the cost of a software subscription into measurable business outcomes. At its core, it answers a deceptively simple question: for every dollar you spend on this tool, how many dollars come back — and over what timeframe?</p>
-      <p>The word "return" in SaaS context is broader than traditional finance. It encompasses direct revenue gains (new customers acquired, deals closed faster), cost avoidance (headcount not hired, errors not made), and productivity multipliers (hours recaptured, workflows automated). A well-built calculator surfaces all three dimensions rather than stopping at license cost.</p>
-      
-      <div class="info-box">
-        <p>According to Gartner, organizations that formally evaluate software ROI before purchase are 2.7x more likely to report satisfaction with their investment three years later. The act of calculation itself enforces rigor — it forces teams to define what "success" actually looks like before a contract is signed.</p>
-      </div>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:20px;">Most SaaS companies don't know what their tools are actually worth. Not in dollars. Not in measurable business outcomes. They track MRR, they watch churn, they celebrate new signups — but when it comes to calculating the actual return on their software investments, they're flying blind.</p>
+    
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:20px;">This isn't a minor gap. In 2023, organizations wasted an estimated $135,000 annually per mid-sized company on redundant or abandoned SaaS subscriptions. That's not just wasted budget — it's missed opportunity. Every dollar spent on software that doesn't deliver measurable ROI is a dollar that could have gone toward growth, product development, or customer success.</p>
 
-      <h3>🎯 Why ROI is Important for SaaS Buyers and Business Owners</h3>
-      <p>The SaaS market crossed $197 billion in global revenue in 2023, and Statista projects it will reach $299 billion by 2025. Inside this growth sits a quieter crisis: Productiv's 2023 SaaS Intelligence Report found that 56% of SaaS applications in enterprise organizations go underutilized, and the average mid-sized company wastes $135,000 annually on redundant or abandoned subscriptions.</p>
-      <p>For founders and operators on the sell side, ROI framing is no longer optional in modern B2B sales cycles. A Forrester study found that 74% of B2B buyers conduct a self-directed ROI analysis before engaging a vendor's sales team. If you can't hand them a credible number, they'll construct one themselves — often a conservative one that kills your deal.</p>
-      
-      <div class="insight-box">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v4M8 11h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <p><strong>Industry Insight:</strong> McKinsey research shows that companies with formalized technology ROI processes make budget allocation decisions 40% faster and with significantly higher cross-functional alignment.</p>
-      </div>
-    </section>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">What is a SaaS ROI Calculator?</h2>
+    
+    <h3 style="font-size:18px;font-weight:600;color:var(--text-1);margin-top:24px;margin-bottom:12px;">📖 Definition and Purpose</h3>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:16px;">A SaaS ROI calculator is a structured financial tool that translates the cost of a software subscription into measurable business outcomes. At its core, it answers a deceptively simple question: for every dollar you spend on this tool, how many dollars come back — and over what timeframe?</p>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:16px;">The word "return" in SaaS context is broader than traditional finance. It encompasses direct revenue gains (new customers acquired, deals closed faster), cost avoidance (headcount not hired, errors not made), and productivity multipliers (hours recaptured, workflows automated). A well-built calculator surfaces all three dimensions rather than stopping at license cost.</p>
+    
+    <div style="background:#eff6ff;border-left:4px solid #3b82f6;border-radius:0 8px 8px 0;padding:16px 20px;margin:20px 0;">
+      <p style="margin:0;color:#1e40af;font-size:15px;font-style:italic;">According to Gartner, organizations that formally evaluate software ROI before purchase are 2.7x more likely to report satisfaction with their investment three years later. The act of calculation itself enforces rigor — it forces teams to define what "success" actually looks like before a contract is signed.</p>
+    </div>
 
-    <!-- Who Can Benefit -->
-    <section class="blog-section">
-      <h2>Who Can Benefit from a SaaS ROI Calculator?</h2>
-      
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#ecfdf5">💼</div>
-          <h4>Business Owners</h4>
-        </div>
-        <p>Business owners carry the most direct accountability for SaaS spend. Every subscription is either pulling its weight or diluting margins. An ROI calculator gives owners a dashboard-level view of software performance — not just what tools cost, but what they return. For SMB owners, where the average SaaS stack consumes 8–12% of total operational budget, the ability to model ROI before committing to an annual contract is directly tied to cash flow management.</p>
-      </div>
-      
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#dbeafe">📈</div>
-          <h4>Marketing Teams</h4>
-        </div>
-        <p>Marketing is simultaneously the team most dependent on SaaS tools and the team most scrutinized for spend justification. HubSpot's 2023 State of Marketing Report found that 61% of marketers cite "proving ROI" as their top challenge. A SaaS ROI calculator reframes this from a narrative exercise into a quantitative one.</p>
-      </div>
-      
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#fef3c7">💰</div>
-          <h4>Finance Teams</h4>
-        </div>
-        <p>Finance professionals bring the most skepticism to SaaS evaluations — and rightly so. Gartner estimates that hidden implementation and maintenance costs account for an average of 30–35% of the true cost of enterprise SaaS over a three-year horizon.</p>
-      </div>
-      
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#ffe4e6">🚀</div>
-          <h4>Startups</h4>
-        </div>
-        <p>For early-stage startups, every dollar is a strategic decision. Y Combinator consistently advises founders to instrument their SaaS stack from day one. Measuring ROI at the tool level creates the habit of data-driven budget allocation.</p>
-      </div>
-      
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#f3e8ff">🏢</div>
-          <h4>Enterprise Buyers</h4>
-        </div>
-        <p>Enterprise procurement is a multi-stakeholder sport. Forrester's Total Economic Impact (TEI) methodology has become the de facto standard for enterprise SaaS evaluation. Companies that arrive at procurement conversations with TEI-style analysis close enterprise deals 35% faster.</p>
-      </div>
-    </section>
+    <h3 style="font-size:18px;font-weight:600;color:var(--text-1);margin-top:24px;margin-bottom:12px;">🎯 Why ROI is Important for SaaS Buyers and Business Owners</h3>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:16px;">The SaaS market crossed $197 billion in global revenue in 2023, and Statista projects it will reach $299 billion by 2025. Inside this growth sits a quieter crisis: Productiv's 2023 SaaS Intelligence Report found that 56% of SaaS applications in enterprise organizations go underutilized, and the average mid-sized company wastes $135,000 annually on redundant or abandoned subscriptions.</p>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:16px;">For founders and operators on the sell side, ROI framing is no longer optional in modern B2B sales cycles. A Forrester study found that 74% of B2B buyers conduct a self-directed ROI analysis before engaging a vendor's sales team. If you can't hand them a credible number, they'll construct one themselves — often a conservative one that kills your deal.</p>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--accent-lt);border:1px solid #c7d2fe;border-radius:8px;padding:14px 16px;margin:20px 0;">
+      <span style="font-size:18px;">💡</span>
+      <p style="margin:0;color:var(--text-2);font-size:14px;"><strong style="color:var(--accent);">Industry Insight:</strong> McKinsey research shows that companies with formalized technology ROI processes make budget allocation decisions 40% faster and with significantly higher cross-functional alignment.</p>
+    </div>
 
-    <!-- How SaaS ROI is Calculated -->
-    <section class="blog-section">
-      <h2>How SaaS ROI is Calculated</h2>
-      
-      <h3>📊 Basic ROI Formula</h3>
-      <div class="formula-box">
-        <code>ROI = (Net Profit / Cost of Investment) × 100</code>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">Who Can Benefit from a SaaS ROI Calculator?</h2>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:24px;">💼</span>
+      <div>
+        <h4 style="font-size:16px;font-weight:600;margin:0 0 8px 0;">Business Owners</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Business owners carry the most direct accountability for SaaS spend. Every subscription is either pulling its weight or diluting margins. An ROI calculator gives owners a dashboard-level view of software performance — not just what tools cost, but what they return.</p>
       </div>
-      <p>The formula is deceptively simple. Net Profit = Total Benefits Generated minus Total Costs Incurred. Cost of Investment = everything spent to acquire, implement, and operate the tool.</p>
-      <p>A 100% ROI means you doubled your money. A 300% ROI means you returned four times the cost. An ROI below 0% means the tool cost more than it generated — a signal to renegotiate, restructure usage, or cut the subscription.</p>
-      
-      <div class="insight-box">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v4M8 11h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <p><strong>Benchmark:</strong> According to Nucleus Research, the average ROI for enterprise CRM implementations is 8.71x — meaning $8.71 returned for every $1.00 invested.</p>
+    </div>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:24px;">📈</span>
+      <div>
+        <h4 style="font-size:16px;font-weight:600;margin:0 0 8px 0;">Marketing Teams</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Marketing is simultaneously the team most dependent on SaaS tools and the team most scrutinized for spend justification. HubSpot's 2023 State of Marketing Report found that 61% of marketers cite "proving ROI" as their top challenge.</p>
       </div>
+    </div>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:24px;">💰</span>
+      <div>
+        <h4 style="font-size:16px;font-weight:600;margin:0 0 8px 0;">Finance Teams</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Finance professionals bring the most skepticism to SaaS evaluations — and rightly so. Gartner estimates that hidden implementation and maintenance costs account for an average of 30–35% of the true cost of enterprise SaaS over a three-year horizon.</p>
+      </div>
+    </div>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:24px;">🚀</span>
+      <div>
+        <h4 style="font-size:16px;font-weight:600;margin:0 0 8px 0;">Startups</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">For early-stage startups, every dollar is a strategic decision. Y Combinator consistently advises founders to instrument their SaaS stack from day one. Measuring ROI at the tool level creates the habit of data-driven budget allocation.</p>
+      </div>
+    </div>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:24px;">🏢</span>
+      <div>
+        <h4 style="font-size:16px;font-weight:600;margin:0 0 8px 0;">Enterprise Buyers</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Enterprise procurement is a multi-stakeholder sport. Forrester's Total Economic Impact (TEI) methodology has become the de facto standard for enterprise SaaS evaluation. Companies with TEI-style analysis close deals 35% faster.</p>
+      </div>
+    </div>
 
-      <h3>🔄 SaaS-Specific Considerations</h3>
-      
-      <div class="benefit-card">
-        <h4>💳 Subscription Costs (Monthly/Yearly)</h4>
-        <p>Unlike traditional software with a single purchase price, SaaS costs are perpetual. A $500/month tool costs $6,000 in year one, $12,000 over two years, and $18,000 over three — before adding seat expansion.</p>
-      </div>
-      
-      <div class="benefit-card">
-        <h4>⚙️ Implementation & Onboarding Costs</h4>
-        <p>Industry data from TSIA indicates that implementation and onboarding typically add 20–35% to the first-year cost of a SaaS platform. For complex enterprise tools, this can reach 100% of the first-year license fee.</p>
-      </div>
-      
-      <div class="benefit-card">
-        <h4>⏱️ Time Savings Value</h4>
-        <p>The standard approach: Hours saved per user per week × Number of users × Loaded hourly rate × 52 weeks. The challenge is that "saved" time must actually be redeployed productively.</p>
-      </div>
-    </section>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">How SaaS ROI is Calculated</h2>
+    
+    <h3 style="font-size:18px;font-weight:600;color:var(--text-1);margin-top:24px;margin-bottom:12px;">📊 Basic ROI Formula</h3>
+    <div style="background:var(--text-1);border-radius:12px;padding:24px;margin:20px 0;text-align:center;">
+      <code style="font-size:20px;color:#4ade80;font-family:'SF Mono',monospace;font-weight:600;">ROI = (Net Profit / Cost of Investment) × 100</code>
+    </div>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:16px;">The formula is deceptively simple. Net Profit = Total Benefits Generated minus Total Costs Incurred. Cost of Investment = everything spent to acquire, implement, and operate the tool.</p>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:16px;">A 100% ROI means you doubled your money. A 300% ROI means you returned four times the cost. An ROI below 0% means the tool cost more than it generated — a signal to renegotiate, restructure usage, or cut the subscription.</p>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--accent-lt);border:1px solid #c7d2fe;border-radius:8px;padding:14px 16px;margin:20px 0;">
+      <span style="font-size:18px;">💡</span>
+      <p style="margin:0;color:var(--text-2);font-size:14px;"><strong style="color:var(--accent);">Benchmark:</strong> According to Nucleus Research, the average ROI for enterprise CRM implementations is 8.71x — meaning $8.71 returned for every $1.00 invested.</p>
+    </div>
 
-    <!-- Six Growth Levers -->
-    <section class="blog-section">
-      <h2>The Six Growth Levers That Drive SaaS Revenue</h2>
-      <p>Our calculator focuses on six interconnected growth levers that compound over time:</p>
-      
-      <div class="stat-grid">
-        <div class="stat-card">
-          <div class="number">1</div>
-          <div class="label">New Account Creations</div>
-        </div>
-        <div class="stat-card">
-          <div class="number">2</div>
-          <div class="label">Onboarding Completion</div>
-        </div>
-        <div class="stat-card">
-          <div class="number">3</div>
-          <div class="label">Activation Rate</div>
-        </div>
-        <div class="stat-card">
-          <div class="number">4</div>
-          <div class="label">Free-to-Paid Conversion</div>
-        </div>
-        <div class="stat-card">
-          <div class="number">5</div>
-          <div class="label">Monthly Churn Rate</div>
-        </div>
-        <div class="stat-card">
-          <div class="number">6</div>
-          <div class="label">Expansion/Upgrade Rate</div>
-        </div>
-      </div>
-      
-      <div class="info-box">
-        <p>These levers work sequentially: New accounts flow into onboarding, then activation, then conversion. Meanwhile, existing customers either churn (bad) or expand through upsells (good). Each lever's improvement compounds through the funnel.</p>
-      </div>
-    </section>
+    <h3 style="font-size:18px;font-weight:600;color:var(--text-1);margin-top:24px;margin-bottom:12px;">🔄 SaaS-Specific Considerations</h3>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h4 style="font-size:15px;font-weight:600;margin:0 0 10px 0;">💳 Subscription Costs (Monthly/Yearly)</h4>
+      <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Unlike traditional software with a single purchase price, SaaS costs are perpetual. A $500/month tool costs $6,000 in year one, $12,000 over two years, and $18,000 over three — before adding seat expansion.</p>
+    </div>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h4 style="font-size:15px;font-weight:600;margin:0 0 10px 0;">⚙️ Implementation & Onboarding Costs</h4>
+      <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Industry data from TSIA indicates that implementation and onboarding typically add 20–35% to the first-year cost of a SaaS platform. For complex enterprise tools, this can reach 100% of the first-year license fee.</p>
+    </div>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h4 style="font-size:15px;font-weight:600;margin:0 0 10px 0;">⏱️ Time Savings Value</h4>
+      <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">The standard approach: Hours saved per user per week × Number of users × Loaded hourly rate × 52 weeks. The challenge is that "saved" time must actually be redeployed productively.</p>
+    </div>
 
-    <!-- Example Calculation -->
-    <section class="blog-section">
-      <h2>Example SaaS ROI Calculation</h2>
-      
-      <div class="case-study">
-        <div class="case-study-header">
-          <h4>📊 Case Study: Marketing Automation Tool</h4>
-        </div>
-        <p>A B2B marketing team at a 150-person company evaluating a marketing automation platform priced at $1,500/month for up to 10 seats.</p>
-        
-        <div class="case-study-grid">
-          <div class="case-study-metric">
-            <div class="value">$1,500</div>
-            <div class="label">Monthly Cost</div>
-          </div>
-          <div class="case-study-metric">
-            <div class="value">$4,500</div>
-            <div class="label">Implementation</div>
-          </div>
-          <div class="case-study-metric">
-            <div class="value">3</div>
-            <div class="label">Team Members</div>
-          </div>
-          <div class="case-study-metric">
-            <div class="value">7.3 hrs</div>
-            <div class="label">Saved/Week</div>
-          </div>
-        </div>
-        
-        <p><strong>Results:</strong> 948% ROI with a 35-day payback period. Annual time savings value of $74,166 plus revenue impact of $162,835 from incremental leads.</p>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">The Six Growth Levers That Drive SaaS Revenue</h2>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:20px;">Our calculator focuses on six interconnected growth levers that compound over time:</p>
+    
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0;">
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;box-shadow:var(--sh-sm);">
+        <div style="font-size:32px;font-weight:700;color:var(--accent);margin-bottom:6px;">1</div>
+        <div style="font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">New Account Creations</div>
       </div>
-    </section>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;box-shadow:var(--sh-sm);">
+        <div style="font-size:32px;font-weight:700;color:var(--accent);margin-bottom:6px;">2</div>
+        <div style="font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Onboarding Completion</div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;box-shadow:var(--sh-sm);">
+        <div style="font-size:32px;font-weight:700;color:var(--accent);margin-bottom:6px;">3</div>
+        <div style="font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Activation Rate</div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;box-shadow:var(--sh-sm);">
+        <div style="font-size:32px;font-weight:700;color:var(--accent);margin-bottom:6px;">4</div>
+        <div style="font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Free-to-Paid Conversion</div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;box-shadow:var(--sh-sm);">
+        <div style="font-size:32px;font-weight:700;color:var(--accent);margin-bottom:6px;">5</div>
+        <div style="font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Monthly Churn Rate</div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;box-shadow:var(--sh-sm);">
+        <div style="font-size:32px;font-weight:700;color:var(--accent);margin-bottom:6px;">6</div>
+        <div style="font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em;">Expansion/Upgrade Rate</div>
+      </div>
+    </div>
+    
+    <div style="background:#eff6ff;border-left:4px solid #3b82f6;border-radius:0 8px 8px 0;padding:16px 20px;margin:20px 0;">
+      <p style="margin:0;color:#1e40af;font-size:15px;">These levers work sequentially: New accounts flow into onboarding, then activation, then conversion. Meanwhile, existing customers either churn (bad) or expand through upsells (good). Each lever's improvement compounds through the funnel.</p>
+    </div>
 
-    <!-- Benefits -->
-    <section class="blog-section">
-      <h2>Benefits of Using a SaaS ROI Calculator</h2>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">Example SaaS ROI Calculation</h2>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin:20px 0;">
+      <div style="background:var(--text-1);color:#fff;padding:14px 18px;border-radius:8px;margin:-24px -24px 20px -24px;">
+        <h4 style="font-size:15px;font-weight:600;margin:0;">📊 Case Study: Marketing Automation Tool</h4>
+      </div>
+      <p style="font-size:15px;color:var(--text-2);margin-bottom:16px;">A B2B marketing team at a 150-person company evaluating a marketing automation platform priced at $1,500/month for up to 10 seats.</p>
       
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#ecfdf5">⚡</div>
-          <h4>Quick, Informed Decision-Making</h4>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0;">
+        <div style="background:var(--surface-2);padding:14px;border-radius:8px;text-align:center;">
+          <div style="font-size:22px;font-weight:700;color:var(--accent);">$1,500</div>
+          <div style="font-size:11px;color:var(--text-3);text-transform:uppercase;font-weight:600;">Monthly Cost</div>
         </div>
-        <p>Speed of decision is itself a competitive advantage. IDC research found that companies that formalize technology evaluation processes report 28% faster decision cycles without a reduction in decision quality.</p>
+        <div style="background:var(--surface-2);padding:14px;border-radius:8px;text-align:center;">
+          <div style="font-size:22px;font-weight:700;color:var(--accent);">$4,500</div>
+          <div style="font-size:11px;color:var(--text-3);text-transform:uppercase;font-weight:600;">Implementation</div>
+        </div>
+        <div style="background:var(--surface-2);padding:14px;border-radius:8px;text-align:center;">
+          <div style="font-size:22px;font-weight:700;color:var(--accent);">3</div>
+          <div style="font-size:11px;color:var(--text-3);text-transform:uppercase;font-weight:600;">Team Members</div>
+        </div>
+        <div style="background:var(--surface-2);padding:14px;border-radius:8px;text-align:center;">
+          <div style="font-size:22px;font-weight:700;color:var(--accent);">7.3 hrs</div>
+          <div style="font-size:11px;color:var(--text-3);text-transform:uppercase;font-weight:600;">Saved/Week</div>
+        </div>
       </div>
       
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#dbeafe">💵</div>
-          <h4>Optimize SaaS Budgets</h4>
-        </div>
-        <p>The average enterprise organization manages 364 SaaS applications. Organizations that conduct annual ROI reviews reduce SaaS spend by an average of 21% without capability loss.</p>
-      </div>
-      
-      <div class="benefit-card">
-        <div class="benefit-card-header">
-          <div class="benefit-card-icon" style="background:#f3e8ff">📊</div>
-          <h4>Data-Driven Investment Justification</h4>
-        </div>
-        <p>Harvard Business Review research found that proposals supported by formal ROI analysis are approved 67% more often and receive larger initial budget allocations.</p>
-      </div>
-    </section>
+      <p style="font-size:15px;color:var(--text-2);margin:0;"><strong>Results:</strong> 948% ROI with a 35-day payback period. Annual time savings value of $74,166 plus revenue impact of $162,835 from incremental leads.</p>
+    </div>
 
-    <!-- Limitations -->
-    <section class="blog-section">
-      <h2>Limitations of ROI Calculators</h2>
-      
-      <div class="benefit-card" style="background:#fef2f2;border-color:#fecaca">
-        <h4>⚠️ Doesn't Capture Qualitative Benefits</h4>
-        <p>Net Promoter Score (NPS) improvements, design quality, reduced cognitive load, team morale — none of these translate cleanly into a ROI formula. Yet user experience quality predicts adoption rates, and adoption is the primary driver of ROI realization.</p>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">Benefits of Using a SaaS ROI Calculator</h2>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:22px;">⚡</span>
+      <div>
+        <h4 style="font-size:15px;font-weight:600;margin:0 0 6px 0;">Quick, Informed Decision-Making</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">IDC research found that companies that formalize technology evaluation processes report 28% faster decision cycles without a reduction in decision quality.</p>
       </div>
-      
-      <div class="benefit-card" style="background:#fffbeb;border-color:#fde68a">
-        <h4>❓ Relies on Estimated Inputs</h4>
-        <p>Garbage in, garbage out. An independent analysis by Forrester found that realized customer outcomes averaged 35–60% below vendor projections in the first year of deployment.</p>
+    </div>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:22px;">💵</span>
+      <div>
+        <h4 style="font-size:15px;font-weight:600;margin:0 0 6px 0;">Optimize SaaS Budgets</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">The average enterprise manages 364 SaaS applications. Organizations that conduct annual ROI reviews reduce SaaS spend by an average of 21% without capability loss.</p>
       </div>
-      
-      <div class="benefit-card" style="background:#f3f4f6;border-color:#e5e7eb">
-        <h4>📋 May Oversimplify Complex Business Impact</h4>
-        <p>Large organizations are non-linear systems. A CRM rollout triggers change management costs, temporary productivity dips, workflow redesign — none of which appear in a standard ROI model.</p>
+    </div>
+    
+    <div style="display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:var(--sh-sm);">
+      <span style="font-size:22px;">📊</span>
+      <div>
+        <h4 style="font-size:15px;font-weight:600;margin:0 0 6px 0;">Data-Driven Investment Justification</h4>
+        <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Harvard Business Review research found that proposals supported by formal ROI analysis are approved 67% more often and receive larger initial budget allocations.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- SaaS vs Traditional ROI -->
-    <section class="blog-section">
-      <h2>SaaS ROI vs Traditional ROI</h2>
-      <p>Traditional ROI was designed for capital expenditure: buy an asset, extract value over its useful life, depreciate it on the balance sheet. SaaS fundamentally breaks this model.</p>
-      
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Dimension</th>
-            <th>SaaS ROI</th>
-            <th>Traditional ROI</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Investment Type</td>
-            <td>Recurring subscription</td>
-            <td>One-time capital outlay</td>
-          </tr>
-          <tr>
-            <td>Payback Horizon</td>
-            <td>Months (3–18)</td>
-            <td>Years (3–7)</td>
-          </tr>
-          <tr>
-            <td>Scalability</td>
-            <td>Elastic — scales with usage</td>
-            <td>Fixed capacity</td>
-          </tr>
-          <tr>
-            <td>Switching Cost</td>
-            <td>Low — cancel anytime</td>
-            <td>High — sunk costs</td>
-          </tr>
-          <tr>
-            <td>Risk Profile</td>
-            <td>Operational risk</td>
-            <td>Capital risk</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">Limitations of ROI Calculators</h2>
+    
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h4 style="font-size:15px;font-weight:600;margin:0 0 10px 0;color:#991b1b;">⚠️ Doesn't Capture Qualitative Benefits</h4>
+      <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Net Promoter Score (NPS) improvements, design quality, reduced cognitive load, team morale — none of these translate cleanly into a ROI formula. Yet user experience quality predicts adoption rates.</p>
+    </div>
+    
+    <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h4 style="font-size:15px;font-weight:600;margin:0 0 10px 0;color:#92400e;">❓ Relies on Estimated Inputs</h4>
+      <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Garbage in, garbage out. An independent analysis by Forrester found that realized customer outcomes averaged 35–60% below vendor projections in the first year of deployment.</p>
+    </div>
+    
+    <div style="background:#f3f4f6;border:1px solid #e5e7eb;border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h4 style="font-size:15px;font-weight:600;margin:0 0 10px 0;color:#374151;">📋 May Oversimplify Complex Business Impact</h4>
+      <p style="font-size:14px;color:var(--text-2);margin:0;line-height:1.6;">Large organizations are non-linear systems. A CRM rollout triggers change management costs, temporary productivity dips, workflow redesign — none of which appear in a standard ROI model.</p>
+    </div>
 
-    <!-- FAQ -->
-    <section class="blog-section">
-      <h2>Frequently Asked Questions</h2>
-      
-      <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">What is a good ROI for SaaS?</button>
-        <div class="faq-answer">
-          <p>For individual SaaS tool evaluations, a 300%+ first-year ROI is generally considered strong. For SaaS companies evaluating their own product's ROI delivered to customers, net revenue retention above 110% is a widely accepted marker of a healthy value proposition. Nucleus Research places the average verified ROI for enterprise SaaS implementations at 671%.</p>
-        </div>
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">SaaS ROI vs Traditional ROI</h2>
+    <p style="font-size:16px;color:var(--text-2);margin-bottom:20px;">Traditional ROI was designed for capital expenditure: buy an asset, extract value over its useful life, depreciate it on the balance sheet. SaaS fundamentally breaks this model.</p>
+    
+    <table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;">
+      <thead>
+        <tr style="background:var(--surface-2);">
+          <th style="text-align:left;padding:14px 16px;font-weight:600;color:var(--text-3);border-bottom:2px solid var(--border);">Dimension</th>
+          <th style="text-align:left;padding:14px 16px;font-weight:600;color:var(--text-3);border-bottom:2px solid var(--border);">SaaS ROI</th>
+          <th style="text-align:left;padding:14px 16px;font-weight:600;color:var(--text-3);border-bottom:2px solid var(--border);">Traditional ROI</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Investment Type</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Recurring subscription</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">One-time capital outlay</td>
+        </tr>
+        <tr style="background:var(--surface-2);">
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Payback Horizon</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Months (3–18)</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Years (3–7)</td>
+        </tr>
+        <tr>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Scalability</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Elastic — scales with usage</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Fixed capacity</td>
+        </tr>
+        <tr style="background:var(--surface-2);">
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Switching Cost</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Low — cancel anytime</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">High — sunk costs</td>
+        </tr>
+        <tr>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Risk Profile</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Operational risk</td>
+          <td style="padding:14px 16px;border-bottom:1px solid var(--border);color:var(--text-2);">Capital risk</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 style="font-size:24px;font-weight:700;color:var(--text-1);margin-top:36px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);">Frequently Asked Questions</h2>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+      <button style="width:100%;padding:18px 20px;text-align:left;background:none;border:none;font-size:15px;font-weight:600;color:var(--text-1);cursor:pointer;display:flex;align-items:center;justify-content:space-between;" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'−':'+';">
+        What is a good ROI for SaaS?
+        <span style="font-size:22px;color:var(--accent);">+</span>
+      </button>
+      <div style="display:none;padding:0 20px 18px;">
+        <p style="font-size:14px;line-height:1.7;color:var(--text-2);margin:0;">For individual SaaS tool evaluations, a 300%+ first-year ROI is generally considered strong. For SaaS companies evaluating their own product's ROI delivered to customers, net revenue retention above 110% is a widely accepted marker of a healthy value proposition. Nucleus Research places the average verified ROI for enterprise SaaS implementations at 671%.</p>
       </div>
-      
-      <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">How accurate is a SaaS ROI calculator?</button>
-        <div class="faq-answer">
-          <p>A SaaS ROI calculator is as accurate as its inputs and as honest as its assumptions. The Forrester finding that actual outcomes average 35–60% below vendor projections in year one argues for discounting any ROI estimate by at least 25–30% when making final budget decisions.</p>
-        </div>
+    </div>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+      <button style="width:100%;padding:18px 20px;text-align:left;background:none;border:none;font-size:15px;font-weight:600;color:var(--text-1);cursor:pointer;display:flex;align-items:center;justify-content:space-between;" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'−':'+';">
+        How accurate is a SaaS ROI calculator?
+        <span style="font-size:22px;color:var(--accent);">+</span>
+      </button>
+      <div style="display:none;padding:0 20px 18px;">
+        <p style="font-size:14px;line-height:1.7;color:var(--text-2);margin:0;">A SaaS ROI calculator is as accurate as its inputs and as honest as its assumptions. The Forrester finding that actual outcomes average 35–60% below vendor projections in year one argues for discounting any ROI estimate by at least 25–30% when making final budget decisions.</p>
       </div>
-      
-      <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">How do you measure SaaS success?</button>
-        <div class="faq-answer">
-          <p>SaaS success is measured across three horizons. Short term (0–90 days): activation rate, time-to-value, and adoption breadth. Medium term (90 days to 12 months): feature utilization depth, net promoter score, and expansion revenue per customer. Long term (12 months+): net revenue retention, customer lifetime value (LTV), and LTV-to-CAC ratio.</p>
-        </div>
+    </div>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+      <button style="width:100%;padding:18px 20px;text-align:left;background:none;border:none;font-size:15px;font-weight:600;color:var(--text-1);cursor:pointer;display:flex;align-items:center;justify-content:space-between;" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'−':'+';">
+        How do you measure SaaS success?
+        <span style="font-size:22px;color:var(--accent);">+</span>
+      </button>
+      <div style="display:none;padding:0 20px 18px;">
+        <p style="font-size:14px;line-height:1.7;color:var(--text-2);margin:0;">SaaS success is measured across three horizons. Short term (0–90 days): activation rate, time-to-value, and adoption breadth. Medium term (90 days to 12 months): feature utilization depth, net promoter score, and expansion revenue per customer. Long term (12 months+): net revenue retention, customer lifetime value (LTV), and LTV-to-CAC ratio.</p>
       </div>
-      
-      <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">Can ROI be negative?</button>
-        <div class="faq-answer">
-          <p>Absolutely. Negative ROI occurs when total costs exceed total quantifiable benefits. Research from Blissfully found that 23% of enterprise SaaS subscriptions generate negative ROI, primarily due to low adoption, duplicate functionality, or poor process fit.</p>
-        </div>
+    </div>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+      <button style="width:100%;padding:18px 20px;text-align:left;background:none;border:none;font-size:15px;font-weight:600;color:var(--text-1);cursor:pointer;display:flex;align-items:center;justify-content:space-between;" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'−':'+';">
+        Can ROI be negative?
+        <span style="font-size:22px;color:var(--accent);">+</span>
+      </button>
+      <div style="display:none;padding:0 20px 18px;">
+        <p style="font-size:14px;line-height:1.7;color:var(--text-2);margin:0;">Absolutely. Negative ROI occurs when total costs exceed total quantifiable benefits. Research from Blissfully found that 23% of enterprise SaaS subscriptions generate negative ROI, primarily due to low adoption, duplicate functionality, or poor process fit.</p>
       </div>
-      
-      <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">How often should I recalculate SaaS ROI?</button>
-        <div class="faq-answer">
-          <p>Quarterly for tools above $1,000/month or with direct revenue attribution. Annually for the full stack. Companies that recalculate annually catch value degradation 18 months earlier than those that review only at renewal.</p>
-        </div>
+    </div>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+      <button style="width:100%;padding:18px 20px;text-align:left;background:none;border:none;font-size:15px;font-weight:600;color:var(--text-1);cursor:pointer;display:flex;align-items:center;justify-content:space-between;" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'−':'+';">
+        How often should I recalculate SaaS ROI?
+        <span style="font-size:22px;color:var(--accent);">+</span>
+      </button>
+      <div style="display:none;padding:0 20px 18px;">
+        <p style="font-size:14px;line-height:1.7;color:var(--text-2);margin:0;">Quarterly for tools above $1,000/month or with direct revenue attribution. Annually for the full stack. Companies that recalculate annually catch value degradation 18 months earlier than those that review only at renewal.</p>
       </div>
-      
-      <div class="faq-item">
-        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">What's the difference between ROI and payback period?</button>
-        <div class="faq-answer">
-          <p>ROI measures total return as a ratio of investment. Payback period measures the time until cumulative returns equal the total investment. ROI tells you how much you made; payback period tells you how quickly you stopped losing. The SaaS industry standard for healthy CAC payback period is 12 months or less for SMB customers and 18 months or less for enterprise.</p>
-        </div>
+    </div>
+    
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+      <button style="width:100%;padding:18px 20px;text-align:left;background:none;border:none;font-size:15px;font-weight:600;color:var(--text-1);cursor:pointer;display:flex;align-items:center;justify-content:space-between;" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'−':'+';">
+        What's the difference between ROI and payback period?
+        <span style="font-size:22px;color:var(--accent);">+</span>
+      </button>
+      <div style="display:none;padding:0 20px 18px;">
+        <p style="font-size:14px;line-height:1.7;color:var(--text-2);margin:0;">ROI measures total return as a ratio of investment. Payback period measures the time until cumulative returns equal the total investment. ROI tells you how much you made; payback period tells you how quickly you stopped losing. The SaaS industry standard for healthy CAC payback period is 12 months or less for SMB customers and 18 months or less for enterprise.</p>
       </div>
-    </section>
+    </div>
 
     <!-- CTA -->
-    <div class="cta-box">
-      <h2>Ready to Calculate Your SaaS ROI?</h2>
-      <p>Input your metrics above and discover which of your six growth levers has the highest dollar impact on 12-month MRR.</p>
-      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="cta-button">
+    <div style="background:linear-gradient(135deg,var(--accent) 0%,#7c3aed 100%);border-radius:16px;padding:48px 32px;text-align:center;color:#fff;margin-top:48px;">
+      <h2 style="font-size:26px;font-weight:700;margin-bottom:12px;">Ready to Calculate Your SaaS ROI?</h2>
+      <p style="font-size:17px;opacity:.95;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto;">Input your metrics above and discover which of your six growth levers has the highest dollar impact on 12-month MRR.</p>
+      <button onclick="window.scrollTo({top:0,behavior:'smooth'});" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--accent);font-weight:700;padding:16px 32px;border-radius:12px;border:none;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);font-size:16px;">
         Try the Calculator
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
     </div>
-  </div>
+  </article>
 </section>
-
 
 </body>
 </html>
