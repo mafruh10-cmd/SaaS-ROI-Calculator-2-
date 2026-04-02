@@ -1,64 +1,95 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-
-// SaaS Revenue Impact Calculator
-// TODO: Convert the HTML content from index.html into React components
+import BlogPost from './components/BlogPost'
+import Calculator from './components/Calculator'
 
 export default function App() {
-  const [step, setStep] = useState(1)
-  
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <header className="text-center py-12">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 bg-brand-100 text-brand-600 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4"
-          >
-            Revenue Analytics
-          </motion.div>
-          <motion.h1
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
-          >
-            SaaS Revenue Impact Calculator
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-gray-600 max-w-lg mx-auto"
-          >
-            Calculate the revenue impact of churn, expansion, and growth on your SaaS business.
-          </motion.p>
-        </header>
+  const [activeTab, setActiveTab] = useState('calculator')
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="card p-8"
-        >
-          <div className="text-center py-12">
-            <p className="text-gray-600 mb-4">
-              This calculator is being set up. The HTML content from the original file
-              needs to be converted into React components.
-            </p>
-            <p className="text-sm text-gray-500">
-              Step {step} of 4
-            </p>
-            <button
-              onClick={() => setStep(s => Math.min(s + 1, 4))}
-              className="btn-primary mt-6"
-            >
-              Get Started
-            </button>
+  return (
+    <div className="min-h-screen bg-slate-50">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">S</span>
+              </div>
+              <span className="font-bold text-slate-900">Saasfactor</span>
+            </div>
+            <div className="flex items-center gap-1 bg-slate-100 rounded-lg p-1">
+              <button
+                onClick={() => setActiveTab('calculator')}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
+                  activeTab === 'calculator'
+                    ? 'bg-white text-slate-900 shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Calculator
+              </button>
+              <button
+                onClick={() => setActiveTab('blog')}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
+                  activeTab === 'blog'
+                    ? 'bg-white text-slate-900 shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                Guide
+              </button>
+            </div>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </nav>
+
+      {/* Main Content */}
+      <main>
+        <AnimatePresence mode="wait">
+          {activeTab === 'calculator' ? (
+            <motion.div
+              key="calculator"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Calculator />
+              {/* Blog content below calculator for SEO */}
+              <div className="border-t border-slate-200 bg-white">
+                <BlogPost />
+              </div>
+            </motion.div>
+          ) : (
+            <motion.div
+              key="blog"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white min-h-screen"
+            >
+              <BlogPost />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-slate-400 py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">S</span>
+              </div>
+              <span className="font-bold text-white">Saasfactor</span>
+            </div>
+            <p className="text-sm">© 2025 Saasfactor. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
