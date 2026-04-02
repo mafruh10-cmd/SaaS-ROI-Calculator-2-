@@ -496,17 +496,59 @@ input[type=range]::-moz-range-thumb{
 
 <div class="page">
 
-  <!-- HEADER -->
-  <header class="header">
+  <!-- HERO / BLOG HEADER -->
+  <header class="blog-hero" style="text-align:center;padding:48px 0 36px">
+    <div class="blog-badge" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent-lt);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:14px">
+      📊 Financial Analysis
+    </div>
+    <h1 style="font-size:clamp(24px,4vw,40px);font-weight:700;letter-spacing:-.025em;margin-bottom:16px;line-height:1.2;color:var(--text-1);max-width:700px;margin-left:auto;margin-right:auto">
+      Free SaaS ROI Calculator: Estimate Your Return on Investment
+    </h1>
+    <p style="font-size:16px;color:var(--text-2);max-width:600px;margin:0 auto;line-height:1.6">
+      A comprehensive guide to understanding, calculating, and maximizing the return on your SaaS investments using data-driven analysis and proven frameworks.
+    </p>
+  </header>
+
+  <!-- KEY TAKEAWAYS -->
+  <div class="key-takeaways" style="background:linear-gradient(135deg,var(--accent-lt) 0%,#f0f4ff 100%);border:1px solid #c7d2fe;border-radius:var(--r-lg);padding:28px 24px;margin:0 auto 48px;max-width:800px">
+    <h2 style="font-size:18px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:10px;color:var(--text-1)">
+      ✨ Key Takeaways
+    </h2>
+    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px">
+      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
+        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
+        <span>SaaS ROI calculators quantify the financial return of software investments by measuring net profit against total cost of ownership — subscriptions, onboarding, and integration included.</span>
+      </li>
+      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
+        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
+        <span>For SaaS founders, the six growth levers — new accounts, onboarding, activation, conversion, churn, and expansion — compound over 12 months and determine the trajectory of MRR.</span>
+      </li>
+      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
+        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
+        <span>Monthly churn is the single most destructive metric in SaaS; reducing it by even 1% can add tens of thousands of dollars in cumulative 12-month revenue.</span>
+      </li>
+      <li style="display:flex;align-items:flex-start;gap:12px;font-size:14.5px;line-height:1.6;color:var(--text-1)">
+        <span style="flex-shrink:0;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">✓</span>
+        <span>Expansion revenue is underestimated: a 3% monthly expansion rate lifts effective ARPU by 43% by month 12 without acquiring a single new customer.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- CALCULATOR HEADER -->
+  <div class="calc-intro" style="text-align:center;margin-bottom:28px">
     <div class="badge">
       <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
         <path d="M5 .5L6.3 3.8H9.5L7 5.8L8 9L5 7L2 9L3 5.8L.5 3.8H3.7Z"/>
       </svg>
-      Revenue Intelligence
+      Interactive Calculator
     </div>
-    <h1>SaaS Revenue Impact Calculator</h1>
-    <p>Answer 8 questions about your SaaS metrics. Then explore how improving 6 growth levers compounds your 12-month revenue.</p>
-  </header>
+    <h2 style="font-size:clamp(20px,3vw,28px);font-weight:700;letter-spacing:-.02em;margin:12px 0 8px;color:var(--text-1)">
+      Calculate Your SaaS Revenue Impact
+    </h2>
+    <p style="font-size:14.5px;color:var(--text-2);max-width:500px;margin:0 auto">
+      Answer 8 questions about your SaaS metrics. Then explore how improving 6 growth levers compounds your 12-month revenue.
+    </p>
+  </div>
 
   <!-- ======================================================
        STEP 1 — Progressive question flow
@@ -1703,19 +1745,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </style>
 
   <div class="blog-container">
-    <!-- Header -->
-    <header class="blog-header">
-      <div class="blog-badge">📊 Financial Analysis</div>
-      <h1>Free SaaS ROI Calculator: Estimate Your Return on Investment</h1>
-      <p>A comprehensive guide to understanding, calculating, and maximizing the return on your SaaS investments using data-driven analysis and proven frameworks.</p>
-    </header>
-
-    <!-- Key Takeaways -->
-    <div class="key-takeaways">
-      <h2>✨ Key Takeaways</h2>
-      <ul>
-        <li>SaaS ROI calculators quantify the financial return of software investments by measuring net profit against total cost of ownership — subscriptions, onboarding, and integration included.</li>
-        <li>For SaaS founders, the six growth levers — new accounts, onboarding, activation, conversion, churn, and expansion — compound over 12 months and determine the trajectory of MRR more than any single metric.</li>
+    <!-- Blog content continues from here -->
         <li>Monthly churn is the single most destructive metric in SaaS; reducing it by even 1% can add tens of thousands of dollars in cumulative 12-month revenue through compounding retention.</li>
         <li>Expansion revenue — upsells and plan upgrades — is underestimated: a 3% monthly expansion rate lifts effective ARPU by 43% by month 12 without acquiring a single new customer.</li>
         <li>SaaS ROI differs from traditional ROI in time horizon, risk profile, and scalability — recurring investment models reward early improvement and penalize delayed action far more sharply.</li>
