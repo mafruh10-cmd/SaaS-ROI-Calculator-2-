@@ -1,6 +1,6 @@
-# SaaS Revenue Impact Calculator
+# SaaS ROI Calculator
 
-A standalone React application for calculating the revenue impact of churn, expansion, and growth on SaaS businesses.
+A standalone React application for calculating SaaS ROI, revenue impact, and retention analytics.
 
 ## Features
 
@@ -38,7 +38,7 @@ This app is deployed to Vercel as a standalone application.
 
 ## URL
 
-Production: https://www.saasfactor.co/tools/saas-revenue-impact-calculator
+Production: https://www.saasfactor.co/tools/saas-roi-calculator
 
 ## Original HTML
 

@@ -4,11 +4,11 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/tools/saas-revenue-impact-calculator/assets/(.*)",
+      "source": "/tools/saas-roi-calculator/assets/(.*)",
       "destination": "/assets/$1"
     },
     {
-      "source": "/tools/saas-revenue-impact-calculator/(.*)",
+      "source": "/tools/saas-roi-calculator/(.*)",
       "destination": "/$1"
     },
     {

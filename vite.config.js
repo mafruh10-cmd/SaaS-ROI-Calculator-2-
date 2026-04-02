@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/tools/saas-revenue-impact-calculator/',
+  base: '/tools/saas-roi-calculator/',
 })
