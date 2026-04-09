@@ -12,12 +12,12 @@ export default function App() {
       <nav className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
+            <a href="https://www.saasfactor.co" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
               <span className="font-bold text-slate-900">Saasfactor</span>
-            </div>
+            </a>
             <div className="flex items-center gap-1 bg-slate-100 rounded-lg p-1">
               <button
                 onClick={() => setActiveTab('calculator')}
@@ -80,12 +80,12 @@ export default function App() {
       <footer className="bg-slate-900 text-slate-400 py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
+            <a href="https://www.saasfactor.co" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
               <span className="font-bold text-white">Saasfactor</span>
-            </div>
+            </a>
             <p className="text-sm">© 2025 Saasfactor. All rights reserved.</p>
           </div>
         </div>
